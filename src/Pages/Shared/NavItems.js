@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const NavItems = ({ items }) => {
     return (
-        <li className='text-white hover:text-secondary lg:mr-8'>
+        <li className='text-white hover:text-primary lg:mr-8'>
             <Link
                 to={items.href}
                 activeClass='active'

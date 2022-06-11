@@ -77,8 +77,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div class="navbar-end mr-5 lg:mr-0">
-                    <a target="_blank" href="https://github.com/sayemaa" className='mr-6'><FiLinkedin /></a>
-                    <a target="_blank" href="https://github.com/sayemaa"><FiGithub /></a>
+                    <a target="_blank" href="https://github.com/sayemaa" className='mr-6 hover:text-primary transition-all duration-300' smooth={true} ><FiLinkedin /></a>
+                    <a target="_blank" href="https://github.com/sayemaa" className='hover:text-primary transition-all duration-300' smooth={true}><FiGithub /></a>
                 </div>
             </div>
         </div>

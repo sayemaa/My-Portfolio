@@ -2,7 +2,7 @@ import React from 'react';
 
 const PrimaryButton = ({ children }) => {
     return (
-        <button className="btn text-white font-bold btn-secondary capitalize">{children}</button>
+        <button className="btn text-white font-bold btn-primary capitalize">{children}</button>
     );
 };
 
