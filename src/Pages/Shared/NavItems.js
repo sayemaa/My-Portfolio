@@ -1,19 +1,59 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link as LinkRouter } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
-const NavItems = ({ items }) => {
+const NavItems = () => {
     return (
-        <li className='text-white hover:text-primary lg:mr-8'>
-            <Link
-                to={items.href}
+        <div className='lg:flex text-white'>
+            <li className='hover:text-primary cursor-pointer lg:mr-8'><Link
+                to='home'
                 activeClass='active'
-                spy={true}
                 smooth={true}
                 duration={500}
                 offset={-70}
-                className='transition-all duration-300'>{items.name}
-            </Link>
-        </li>
+                className='transition-all duration-300'
+            >Home</Link></li>
+            <li className='hover:text-primary cursor-pointer lg:mr-8'><Link
+                to='about'
+                activeClass='active'
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className='transition-all duration-3000'
+            >About</Link></li>
+            <li className='hover:text-primary cursor-pointer lg:mr-8'><Link
+                to='projects'
+                activeClass='active'
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className='transition-all duration-300'
+            >Projects</Link></li>
+            {/* <li className='hover:text-primary cursor-pointer lg:mr-8'><Link
+                to='services'
+                activeClass='active'
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className='transition-all duration-300'
+            >Services</Link></li> */}
+            <li className='hover:text-primary cursor-pointer lg:mr-8'><Link
+                to='contact'
+                activeClass='active'
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className='transition-all duration-300'
+            >Contact</Link></li>
+            <li className='hover:text-primary cursor-pointer'><LinkRouter
+                to='/blogs'
+                activeClass='active'
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className='transition-all duration-300'
+            >Blogs</LinkRouter></li>
+        </div>
     );
 };
 

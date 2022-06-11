@@ -1,10 +1,16 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import { FiGithub } from 'react-icons/fi';
 import { FiLinkedin } from 'react-icons/fi';
 import NavItems from './NavItems';
 
 const Navbar = () => {
+    const [bg, setBg] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            return window.scrollY > 50 ? setBg(true) : setBg(false);
+        });
+    });
 
     const menuItems = [
         {
@@ -25,38 +31,10 @@ const Navbar = () => {
         }
     ]
 
-    // const menuItems = <>
-    //     <li className='text-white hover:text-secondary mr-8'>
-    //         <Link
-    //             to="home"
-    //             activeClass='active'
-    //             smooth={true}
-    //             duration={500}
-    //             offset={-70}
-    //             className='transition-all duration-300'>Home</Link></li>
-    //     <li className='text-white hover:text-secondary mr-8'>
-    //         <Link
-    //             to="/about"
-    //             activeClass='active'
-    //             smooth={true}
-    //             duration={500}
-    //             offset={-70}
-    //             className='transition-all duration-300'>About</Link></li>
-    //     <li className='text-white hover:text-secondary mr-8'><Link to="/projects" activeClass='active'
-    //         smooth={true}
-    //         duration={500}
-    //         offset={-70}
-    //         className='transition-all duration-300'>Projects</Link></li>
-    //     <li className='text-white hover:text-secondary mr-8'><Link to="/contact" activeClass='active'
-    //         smooth={true}
-    //         duration={500}
-    //         offset={-70}
-    //         className='transition-all duration-300'>Contact</Link></li>
-    // </>
-
     return (
-        <div className='max-w-6xl mx-auto'>
-            <div class="navbar bg-base-100 mt-2">
+        <div className={`${bg ? 'bg-[#0a0f19] h-20' : 'h-24'
+            } flex items-center fixed top-0 w-full text-white z-10 transition-all duration-300`}>
+            <div class="navbar max-w-6xl mx-auto mt-2">
                 <div class="navbar-start lg:hidden">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -64,7 +42,7 @@ const Navbar = () => {
                         </label>
                         <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             {
-                                menuItems.map((items, index) => <NavItems key={index + 1} items={items}></NavItems>)
+                                <NavItems />
                             }
                         </ul>
                     </div>
@@ -72,13 +50,13 @@ const Navbar = () => {
                 <div class="navbar-start hidden lg:flex">
                     <ul class="flex p-0 ">
                         {
-                            menuItems.map((items, index) => <NavItems key={index + 1} items={items}></NavItems>)
+                            <NavItems />
                         }
                     </ul>
                 </div>
                 <div class="navbar-end mr-5 lg:mr-0">
-                    <a target="_blank" href="https://github.com/sayemaa" className='mr-6 hover:text-primary transition-all duration-300' smooth={true} ><FiLinkedin /></a>
-                    <a target="_blank" href="https://github.com/sayemaa" className='hover:text-primary transition-all duration-300' smooth={true}><FiGithub /></a>
+                    <a target="_blank" rel="noReferrer" href="https://github.com/sayemaa" className='mr-6 hover:text-primary transition-all duration-300' smooth={true} ><FiLinkedin /></a>
+                    <a target="_blank" rel="noReferrer" href="https://github.com/sayemaa" className='hover:text-primary transition-all duration-300' smooth={true}><FiGithub /></a>
                 </div>
             </div>
         </div>
