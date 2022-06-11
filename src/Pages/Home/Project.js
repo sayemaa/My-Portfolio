@@ -17,10 +17,22 @@ const Project = ({ project }) => {
                 <h2 class="card-title justify-center">{name}</h2>
                 <p>{description}</p>
                 <div className='text-primary'>
-                    <a href={liveWebsite} className="hover:text-secondary transition-all duration-300">Live Website</a>
-                    <a href={clientLink} className="mx-4 hover:text-secondary transition-all duration-300">GitHub Client</a>
+                    <a
+                        target="_blank"
+                        href={liveWebsite}
+                        rel="noReferrer"
+                        className="hover:text-secondary transition-all duration-300">Live Website</a>
+                    <a
+                        target="_blank"
+                        href={clientLink}
+                        rel="noReferrer"
+                        className="mx-4 hover:text-secondary transition-all duration-300">GitHub Client</a>
                     {
-                        serverLink && <a href={serverLink} className="hover:text-secondary transition-all duration-300">GitHub Server</a>
+                        serverLink && <a
+                            target="_blank"
+                            href={serverLink}
+                            rel="noReferrer"
+                            className="hover:text-secondary transition-all duration-300">GitHub Server</a>
                     }
                 </div>
                 <div class="card-actions justify-center mt-5">
