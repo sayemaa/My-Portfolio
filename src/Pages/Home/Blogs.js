@@ -8,7 +8,7 @@ const Blogs = () => {
             <h4 className='text-3xl text-primary font-bold mb-3'>Blogs</h4>
             <h2 className='text-5xl font-semibold mb-12'>Coming Soon..</h2>
             <div>
-                <Link to='/' className='btn btn-sm btm-outline btn-primary mt-2'><MdArrowBackIos /> Home</Link>
+                <Link to='/' className='btn btn-sm btm-outline btn-primary mt-2 transition-all duration-300'><MdArrowBackIos /> Home</Link>
             </div>
         </div>
     );

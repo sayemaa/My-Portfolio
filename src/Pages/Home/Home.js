@@ -4,6 +4,7 @@ import Hero from './Hero';
 import Navbar from '../Shared/Navbar';
 import About from './About';
 import Contact from './Contact';
+import Footer from '../Shared/Footer';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <About />
             <Projects />
             <Contact />
+            <Footer />
         </div>
     );
 };

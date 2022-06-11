@@ -12,25 +12,6 @@ const Navbar = () => {
         });
     });
 
-    const menuItems = [
-        {
-            name: 'Home',
-            href: 'home'
-        },
-        {
-            name: 'About',
-            href: 'about'
-        },
-        {
-            name: 'Projects',
-            href: 'projects'
-        },
-        {
-            name: 'Contact',
-            href: 'contact'
-        }
-    ]
-
     return (
         <div className={`${bg ? 'bg-[#0a0f19] h-20' : 'h-24'
             } flex items-center fixed top-0 w-full text-white z-10 transition-all duration-300`}>

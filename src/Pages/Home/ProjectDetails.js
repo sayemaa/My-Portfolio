@@ -35,20 +35,20 @@ const ProjectDetails = () => {
                             backEndTechnology && <h2 className='text-white'>Back-End Technologies: {backEndTechnology}</h2>
                         }
                         <div className='flex gap-3 my-3'>
-                            <a className='text-primary hover:text-secondary cursor-pointer' href={liveWebsite} target="_blank" rel='noReferrer'>
+                            <a className='text-primary hover:text-secondary transition-all duration-300' href={liveWebsite} target="_blank" rel='noReferrer'>
                                 Live Website
                             </a>
-                            <a className='text-primary hover:text-secondary cursor-pointer' href={clientLink} target="_blank" rel='noReferrer'>
+                            <a className='text-primary hover:text-secondary transition-all duration-300' href={clientLink} target="_blank" rel='noReferrer'>
                                 Github Client
                             </a>
                             {
-                                serverLink && <a className='text-primary hover:text-secondary cursor-pointer' href={serverLink} target="_blank" rel='noReferrer'>
+                                serverLink && <a className='text-primary hover:text-secondary transition-all duration-300' href={serverLink} target="_blank" rel='noReferrer'>
                                     Github Server
                                 </a>
                             }
                         </div>
                         <div>
-                            <Link to='/' className='btn btn-sm btm-outline btn-primary mt-2'><MdArrowBackIos /> Back</Link>
+                            <Link to='/' className='btn btn-sm btn-primary mt-2 transition-all duration-300'><MdArrowBackIos /> Back</Link>
                         </div>
                     </div>
                 </div>

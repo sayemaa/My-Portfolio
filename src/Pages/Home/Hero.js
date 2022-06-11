@@ -15,15 +15,15 @@ const Home = () => {
                             <h1 class="lg:text-6xl text-5xl font-bold py-6">I Design Web Interfaces</h1>
                             <div className='mt-3 flex justify-center lg:justify-start'>
                                 <div className='mr-3'>
-                                    <Link to="projects" className="btn text-white font-bold btn-primary" smooth>Explore</Link>
+                                    <Link to="projects" className="btn text-white font-bold btn-primary transition-all duration-300" smooth>Explore</Link>
                                 </div>
                                 <div>
                                     <a
                                         href={resume}
-                                        className="btn text-white font-bold btn-primary"
+                                        className="btn text-white font-bold btn-primary transition-all duration-300"
                                         download="Resume of Sayema Akhtar"
                                     >
-                                        Download CV
+                                        Resume
                                     </a></div>
                             </div>
                         </div>

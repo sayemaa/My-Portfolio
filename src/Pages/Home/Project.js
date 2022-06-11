@@ -17,14 +17,14 @@ const Project = ({ project }) => {
                 <h2 class="card-title justify-center">{name}</h2>
                 <p>{description}</p>
                 <div className='text-primary'>
-                    <a href={liveWebsite} className="hover:text-secondary">Live Website</a>
-                    <a href={clientLink} className="mx-4 hover:text-secondary">GitHub Client</a>
+                    <a href={liveWebsite} className="hover:text-secondary transition-all duration-300">Live Website</a>
+                    <a href={clientLink} className="mx-4 hover:text-secondary transition-all duration-300">GitHub Client</a>
                     {
-                        serverLink && <a href={serverLink} className="hover:text-secondary">GitHub Server</a>
+                        serverLink && <a href={serverLink} className="hover:text-secondary transition-all duration-300">GitHub Server</a>
                     }
                 </div>
                 <div class="card-actions justify-center mt-5">
-                    <button onClick={() => navigateToProjectDetails(id)} className='btn btn-outline btn-primary btn-sm font-bold flex items-center'>See Details <MdReadMore className='ml-1' /></button>
+                    <button onClick={() => navigateToProjectDetails(id)} className='btn btn-outline btn-primary btn-sm font-bold flex items-center transition-all duration-300'>See Details <MdReadMore className='ml-1' /></button>
                 </div>
             </div>
         </div>

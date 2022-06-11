@@ -4,8 +4,8 @@ import Project from './Project';
 
 const Projects = () => {
     return (
-        <div className='bg-base-300 py-28'>
-            <div id="projects" className='max-w-6xl mx-auto text-center'>
+        <div id="projects" className='bg-base-300 pb-20 pt-16'>
+            <div className='max-w-6xl mx-auto text-center'>
                 <h4 className='font-bold text-primary text-lg mb-2'>Projects</h4>
                 <h2 className='font-bold text-4xl lg:text-5xl'>My Latest Projects</h2>
 
