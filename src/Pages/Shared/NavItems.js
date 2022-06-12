@@ -7,6 +7,7 @@ const NavItems = () => {
         <div className='lg:flex text-white'>
             <li className='hover:text-primary cursor-pointer lg:mr-8'><Link
                 to='home'
+                spy={true}
                 activeClass='active'
                 smooth={true}
                 duration={500}
@@ -15,6 +16,7 @@ const NavItems = () => {
             >Home</Link></li>
             <li className='hover:text-primary cursor-pointer lg:mr-8'><Link
                 to='about'
+                spy={true}
                 activeClass='active'
                 smooth={true}
                 duration={500}
