@@ -11,8 +11,8 @@ const Home = () => {
                     <div class="hero-content flex-col lg:flex-row-reverse">
                         <img src={picture} class="lg:w-[600px] lg:flex hidden rounded-lg ml-5" alt="Sayema Akhtar" />
                         <div className='text-center lg:text-start lg:max-w-lg lg:ml-5 mt-28 lg:mt-[-65px]'>
-                            <p className='text-primary text-lg font-medium'>Hi there! I'm Sayema Akhtarrrrr.</p>
-                            <h1 class="lg:text-6xl text-5xl font-bold py-6">I Design Web Interfaces</h1>
+                            <p className='text-primary text-lg font-medium'>Hi there! I'm Sayema Akhtar.</p>
+                            <h1 class="lg:text-6xl text-5xl text-white font-bold py-6">I Design Web Interfaces</h1>
                             <div className='mt-3 flex justify-center lg:justify-start'>
                                 <div className='mr-3'>
                                     <Link to="projects" className="btn text-white font-bold btn-primary transition-all duration-300" smooth>Explore</Link>

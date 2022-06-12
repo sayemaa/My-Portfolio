@@ -6,7 +6,7 @@ import { MdArrowBackIos } from 'react-icons/md';
 const ProjectDetails = () => {
     const { projectId } = useParams();
     const selectedProject = projects.filter(project => project.id === projectId);
-    const { name, description, point1, point2, point3, frontEndTechnology, backEndTechnology, img, liveWebsite, clientLink, serverLink } = selectedProject[0];
+    const { name, description, point1, point2, point3, frontEndTechnology, backEndTechnology, img1, img2, img3, liveWebsite, clientLink, serverLink } = selectedProject[0];
 
     return (
         <div className='mx-auto h-screen flex justify-center flex-col items-center mt-12 lg:mt-0'>
@@ -14,10 +14,24 @@ const ProjectDetails = () => {
                 <div className='flex gap-6 lg:flex-row flex-col items-center'>
                     <div class="carousel lg:w-1/4 rounded-xl lg:flex-1">
                         <div id="slide1" class="carousel-item relative w-full">
-                            <img src={img} class="w-full" alt='' />
+                            <img src={img1} class="w-full" alt='' />
                             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                 <a href="#slide4" class="btn btn-circle btn-ghost text-neutral">❮</a>
                                 <a href="#slide2" class="btn btn-circle btn-ghost text-neutral">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide2" class="carousel-item relative w-full">
+                            <img src={img2} class="w-full" alt='' />
+                            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                <a href="#slide1" class="btn btn-circle btn-ghost text-neutral">❮</a>
+                                <a href="#slide3" class="btn btn-circle btn-ghost text-neutral">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide3" class="carousel-item relative w-full">
+                            <img src={img3} class="w-full" alt='' />
+                            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                <a href="#slide2" class="btn btn-circle btn-ghost text-neutral">❮</a>
+                                <a href="#slide4" class="btn btn-circle btn-ghost text-neutral">❯</a>
                             </div>
                         </div>
                     </div>

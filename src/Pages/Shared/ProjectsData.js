@@ -1,6 +1,12 @@
-import spareGear from '../../assets/projects/Spare Gear.png'
-import fragrance from '../../assets/projects/Fragrance.png'
-import inDent from '../../assets/projects/inDent.png'
+import spareGear1 from '../../assets/projects/Spare Gear-1.png'
+import spareGear2 from '../../assets/projects/Spare Gear-2.png'
+import spareGear3 from '../../assets/projects/Spare Gear-3.png'
+import fragrance1 from '../../assets/projects/Fragrance-1.png'
+import fragrance2 from '../../assets/projects/Fragrance-2.png'
+import fragrance3 from '../../assets/projects/Fragrance-3.png'
+import inDent1 from '../../assets/projects/inDen-1.png'
+import inDent2 from '../../assets/projects/inDen-2.png'
+import inDent3 from '../../assets/projects/inDen-3.png'
 
 const projects = [
     {
@@ -12,7 +18,9 @@ const projects = [
         point3: "• Admins can also add and delete products, manage all orders and also ship pending payments.",
         frontEndTechnology: "HTML, Tailwind, daisyUI, JavaScript, React, React Router, Firebase.",
         backEndTechnology: "Node.js, Express.js, MongoDB, JWT.",
-        img: spareGear,
+        img1: spareGear1,
+        img2: spareGear2,
+        img3: spareGear3,
         liveWebsite: "https://manufacturer-website-318ed.web.app/",
         clientLink: "https://github.com/sayemaa/Spare-Gear-Client",
         serverLink: "https://github.com/sayemaa/Spare-Gear-Server",
@@ -26,7 +34,9 @@ const projects = [
         point3: "• Users can add or delete perfumes and also manage inventory after logging in.",
         frontEndTechnology: "HTML, CSS, JavaScript, React, React Bootstrap, React Router, Firebase.",
         backEndTechnology: "Node.js, Express.js, MongoDB, JWT.",
-        img: fragrance,
+        img1: fragrance1,
+        img2: fragrance2,
+        img3: fragrance3,
         liveWebsite: "https://warehouse-management-web-79467.web.app/",
         clientLink: "https://github.com/sayemaa/Fragrance-Warehouse-Client",
         serverLink: "https://github.com/sayemaa/Fragrance-Warehouse-Server",
@@ -39,7 +49,9 @@ const projects = [
         point2: "• Users can book an appointment after they log in or register.",
         point3: "• There are three services from which users can book.",
         frontEndTechnology: "HTML, CSS, Bootstrap, JavaScript, React, React Bootstrap, React Router, Firebase.",
-        img: inDent,
+        img1: inDent1,
+        img2: inDent2,
+        img3: inDent3,
         liveWebsite: "https://dental-service-f0546.web.app/",
         clientLink: "https://github.com/sayemaa/inDent",
     },

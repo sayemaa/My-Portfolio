@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { MdReadMore } from 'react-icons/md';
 
 const Project = ({ project }) => {
-    const { id, name, description, img, liveWebsite, clientLink, serverLink } = project;
+    const { id, name, description, img1, liveWebsite, clientLink, serverLink } = project;
 
     const navigate = useNavigate();
 
@@ -12,7 +12,7 @@ const Project = ({ project }) => {
     }
     return (
         <div class="card w-96 bg-base-300">
-            <figure><img src={img} alt={name} className='max-w-xs rounded-xl ' /></figure>
+            <figure><img src={img1} alt={name} className='max-w-xs rounded-xl ' /></figure>
             <div class="card-body px-8">
                 <h2 class="card-title justify-center">{name}</h2>
                 <p>{description}</p>

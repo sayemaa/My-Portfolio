@@ -6,7 +6,7 @@ const Contact = () => {
         <div id="contact" className='pb-20 pt-12'>
             <div className='text-center pb-8'>
                 <h3 className='text-xl text-primary font-bold mb-4'>Contact</h3>
-                <h2 className='text-3xl font-normal'>Get in Touch</h2>
+                <h2 className='text-3xl font-bold text-white'>Get in Touch</h2>
             </div>
             <form
                 method="POST"
