@@ -1,15 +1,15 @@
 import React from 'react';
-import picture from '../../assets/images/picture.png'
+import picture from '../../assets/images/pic1.png'
 import resume from '../../assets/portfolio/Resume-Sayema.pdf';
 import { Link } from 'react-scroll';
 
 const Home = () => {
     return (
-        <div id="home" className='bg-base-300 pb-28 pt-10 lg:pt-14 lg:pb-0'>
+        <div id="home" className='bg-base-300 pb-28 pt-10 lg:pt-8 lg:pb-0 lg:mb-0'>
             <div className='max-w-7xl mx-auto'>
                 <div class="hero">
-                    <div class="hero-content flex-col lg:flex-row-reverse">
-                        <img src={picture} class="lg:w-[600px] lg:flex hidden rounded-lg ml-5" alt="Sayema Akhtar" />
+                    <div class="hero-content flex-col pb-0 lg:flex-row-reverse">
+                        <img src={picture} class="lg:w-[500px] lg:flex hidden rounded-lg ml-5" alt="Sayema Akhtar" />
                         <div className='text-center lg:text-start lg:max-w-lg lg:ml-5 mt-28 lg:mt-[-65px]'>
                             <p className='text-primary text-lg font-medium'>Hi there! I'm Sayema Akhtar.</p>
                             <h1 class="lg:text-6xl text-5xl text-white font-bold py-6">I Design Web Interfaces</h1>

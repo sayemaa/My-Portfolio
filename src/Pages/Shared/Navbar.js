@@ -13,7 +13,7 @@ const Navbar = () => {
     });
 
     return (
-        <div className={`${bg ? 'bg-[#0a0f19] h-20' : 'h-24'
+        <div className={`${bg ? 'bg-[#0d0c0b] h-20' : 'h-24'
             } flex items-center fixed top-0 w-full text-white z-10 transition-all duration-300`}>
             <div class="navbar max-w-6xl mx-auto mt-2">
                 <div class="navbar-start lg:hidden">

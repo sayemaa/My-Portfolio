@@ -17,24 +17,24 @@ const Contact = () => {
                     name='Name'
                     type='text'
                     placeholder='Full Name'
-                    className='input w-full max-w-md bg-[#141831]'
+                    className='input w-full max-w-md bg-[#251f1b]'
                 /><input
                     required
                     name='Email'
                     type='email'
                     placeholder='Email Address'
-                    className='input w-full max-w-md bg-[#141831]'
+                    className='input w-full max-w-md bg-[#251f1b]'
                 />
                 <input
                     name='Subject'
                     type='text'
                     placeholder='Subject'
-                    className='input w-full max-w-md bg-[#141831]'
+                    className='input w-full max-w-md bg-[#251f1b]'
                 />
                 <textarea
                     required
                     name='Message'
-                    className='textarea w-full max-w-md bg-[#141831]'
+                    className='textarea w-full max-w-md bg-[#251f1b]'
                     placeholder='Your message'
                     rows={5}
                 ></textarea>

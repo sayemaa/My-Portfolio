@@ -47,14 +47,14 @@ const NavItems = () => {
                 offset={-70}
                 className='transition-all duration-300'
             >Contact</Link></li>
-            <li className='hover:text-primary cursor-pointer'><LinkRouter
+            {/* <li className='hover:text-primary cursor-pointer'><LinkRouter
                 to='/blogs'
                 activeClass='active'
                 smooth={true}
                 duration={500}
                 offset={-70}
                 className='transition-all duration-300'
-            >Blogs</LinkRouter></li>
+            >Blogs</LinkRouter></li> */}
         </div>
     );
 };
