@@ -13,7 +13,7 @@ const Project = ({ project }) => {
     return (
         <div class="card w-96 bg-base-300">
             <figure><img src={img1} alt={name} className='max-w-xs rounded-xl ' /></figure>
-            <div class="card-body px-8">
+            <div class="card-body px-6">
                 <h2 class="card-title justify-center">{name}</h2>
                 <p>{description}</p>
                 <div className='text-primary'>
